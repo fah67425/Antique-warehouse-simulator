@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="widht=device-widht," initial-scale="1.0">
+        <title>The Antique Corner</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>the antique corner warehouse</h1>
+            <p>discover treasures from the past.</p>
+        </header>
+
+        <section id="wallet">
+            your coins: <span id="coins">100</span>
+        </section>
+
+        <div id="coinanimation"></div>
+        <div id="messagepopup"></div>
+
+        <section id="upgradesection">
+            <p>shop level: <span id="shoplevel">1</span></p>
+            <p>upgrade cost <span id="upgradecost">150</span> coins</p>
+            <button onclick="upgradeshop()" id="upgradebutton">UPGRADE SHOP</button>
+            <p id="upgrademessage"></p>
+        </section>
+
+        <main>
+            <h2>available antiques</h2>
+            <div id="shop">
+                <div class="item" data-level="1">
+                    <img src="oldrolex.png" alt="old rolex watch">
+                    <h3>old rolex watch</h3>
+                    <p>A beautiful vintage clock.</p>
+                    <p>price : 30 coins</p>
+                    <button onclick="buyitem(30, 'old rolex watch')">BUY NOW</button>
+                </div>
+
+                <div class="item" data-level="1">
+                    <img src="vase.png" alt="ancient vase">
+                    <h3>ancient vase</h3>
+                    <p>a vase with log history.</p>
+                    <p>price : 20 coins</p>
+                    <button onclick="buyitem(20, 'ancient vase')">BUY NOW</button>
+                </div>
+
+                <div class="item" data-level="1">
+                    <img src="radio.png" alt="vintage radio">
+                    <h3>vintage radio</h3>
+                    <p>an old radio with a big history.</p>
+                    <p>price: 40 coins</p>
+                    <button onclick="buyitem(40, 'vintage radio')">BUY NOW</button>
+                </div>
+
+                <div class="item" data-level="2">
+                    <img src="antiquecoin.png" alt="antique coin">
+                    <h3>antique coin</h3>
+                    <p>a rare coin from another era.(psst.. this coin worth millions)</p>
+                    <p>price: 110 coins</p>
+                    <button onclick="buyitem(110,'antique coin')">BUY NOW</button>
+                </div>
+
+                <div class="item" data-level="2">
+                    <img src="goldentrophy.png" alt="golden trophy">
+                    <h3>golden trophy</h3>
+                    <p>a huge angelic trophy from the past.</p>
+                    <p>price: 60 coins</p>
+                    <button onclick="buyitem(60, 'golden trophy')">BUY NOW</button>
+                </div>
+
+                <div class="item" data-level="3">
+                    <img src="sniperrifle.png" alt="sniperrifle">
+                    <h3>ancient sniper rifle</h3>
+                    <p>a sniper rifle that been used by a soldier in WW1</p>
+                    <p>price: 67</p>
+                    <button onclick="buyitem(67, 'ancient sniper rifle')">BUY NOW</button>
+                </div>
+
+                <div class="item" data-level="3">
+                    <img src="animalboneaxe.png" alt="animalboneaxe">
+                    <h3>axe made by animal bone</h3>
+                    <p>this is what people in ancient use to chop tree</p>
+                    <p>price: 70</p>
+                    <button onclick="buyitem(70, 'animal bone axe')">BUY NOW</button>
+                </div>
+
+                <div class="item" data-level="1">
+                    <img src="mirror.png" alt="luxury golden mirror">
+                    <h3>luxury golden mirror</h3>
+                    <p>an elegant antique mirror.</p>
+                    <p>price : 50 coins</p>
+                    <button onclick="buyitem(50, 'luxury golden mirror')">BUY NOW</button> 
+                </div>
+            </div>
+
+            <section id="customersection">
+                <h2>CUSTOMER</h2>
+
+                <div id="customer">
+                    <h3 id="customername">customer</h3>
+
+                    <p id="customerrequest">
+                        loading request...
+                    </p>
+                    <p>reward : <span id=customerreward>0</span>coins</p>
+                    <p>time left: <span id="customertimer">0</span></p>
+
+                    <button id="completeorderbtn" onclick="completeorder(), playcashsound()">COMPLETE ORDER</button>
+                    <button onclick="newcustomer()">NEW CUSTOMER</button>
+
+                    <p id="customermessage"></p>
+                </div>
+            </section>
+
+            <section id="reviewsection">
+                <h2>CUSTOMER REVIEWS</h2>
+                <div id="reviews"></div>
+            </section>
+
+            <h2>shop challenges</h2>
+            <div id="challenges"></div>
+            <button onclick="newchallenges()">NEW CHALLENGE</button>
+
+            <h2>your collection</h2>
+            <ul id=collection>
+                <li>no antique collected yet.</li>
+            </ul>
+            <button onclick="sellitem()">SELL ANTIQUE</button>
+            <p id="sellmessage"></p>
+
+            <p id="message">welcome to the shop!</p>
+        </main>
+
+        <div id="cheatsection">
+            <input id="cheatinput" type="text" placeholder="enter cheat code">
+            <button onclick="activatecheat()">ENTER</button>
+            <p id="cheatmessage"></p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
