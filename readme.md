@@ -1,195 +1,181 @@
 # The Antique Corner
 
-The Antique Corner is a web-based antique shop simulator built with HTML, CSS, and JavaScript.
+The Antique Corner is a fully web-based antique warehouse simulator built with HTML, CSS, and JavaScript.
 
-The entire game runs in your web browser. You do not need to install an app, download a game engine, or use a server.
+You can play it directly in your web browser. No installation, downloads, or additional software are required to play the online version.
+
+## Play the Game
+
+Play The Antique Corner here:
+
+https://fah67425.github.io/Antique-warehouse-simulator/
+
+## GitHub Repository
+
+View the source code and project files on GitHub:
+
+https://github.com/fah67425/Antique-warehouse-simulator
+
+## Installation
+
+### Option 1: Play Online
+
+The easiest way to play is to open the website:
+
+https://fah67425.github.io/Antique-warehouse-simulator/
+
+The game runs directly in your browser.
+
+### Option 2: Download and Run Locally
+
+1. Open the GitHub repository.
+2. Click the green `Code` button.
+3. Select `Download ZIP`.
+4. Extract the ZIP file.
+5. Open the extracted project folder.
+6. Open `index.html` in a modern web browser.
+7. Start playing.
+
+No server or installation is required for the basic local version.
 
 ## How to Play
 
-Your goal is to grow your antique shop by buying antiques, completing customer orders, earning coins, completing challenges, and upgrading your shop.
+Your goal is to grow your antique business by buying antiques, managing your collection, completing customer orders, earning coins, completing challenges, and upgrading your shop.
 
-### 1. Open the Game
+### Buy Antiques
 
-Open the project's `index.html` file in a web browser.
+The Available Antiques section shows the antiques currently available to your shop.
 
-You can run it locally on your computer or host it on a web hosting service.
+Click `Buy` to purchase an antique.
 
-The game is completely web based.
+Coins are removed from your wallet and the antique is added to your collection.
 
-## 2. Buy Antiques
-
-The Available Antiques section shows the items you can buy.
-
-Each antique has:
-
-- An image
-- A name
-- A description
-- A purchase price
-- A Buy button
-
-Click Buy to purchase an antique.
-
-The cost is removed from your coins, and the antique is added to your collection.
-
-## 3. Manage Your Collection
+### Manage Your Collection
 
 Your Collection section shows the antiques you currently own.
 
-You can sell an antique to earn coins.
+You can sell antiques to earn coins.
 
 Each antique has a fixed selling price.
 
-Selling antiques gives you money that you can use to buy more items or upgrade your shop.
+### Serve Customers
 
-## 4. Serve Customers
+Customers request antiques from your shop.
 
-Customers appear in the Customer section.
+You must own the requested antique before completing the order.
 
-Each customer requests a specific antique.
+Click `Complete Order` to give the customer their requested antique and receive your reward.
 
-You must own the requested antique before you can complete the order.
-
-Click Complete Order to give the customer their antique.
-
-You receive coins as a reward.
-
-Customers also have a time limit.
+Customers have a limited amount of time to receive their order.
 
 The timer randomly starts between 15 and 30 seconds.
 
-If you complete the order quickly, you receive a better review.
+Complete orders quickly to receive better customer reviews.
 
 If the timer reaches zero, the customer leaves and gives you a bad review.
 
-## 5. Customer Reviews
+### Customer Reviews
 
-Completed orders can generate customer reviews.
+Customers can leave reviews from 1 to 5 stars.
 
-Reviews are rated from 1 to 5 stars.
+Your service speed affects the rating.
 
-Faster service gives better ratings.
+Faster orders receive better reviews.
 
 New reviews appear at the top of the Customer Reviews section.
 
-## 6. Complete Challenges
+### Daily Challenges
 
-The Daily Shop Challenges section contains three randomly selected challenges.
+The game generates three random challenges.
 
-Challenges can require you to:
+Challenges can involve:
 
-- Buy antiques
-- Collect different antiques
-- Spend coins
-- Purchase specific antiques
+- Buying antiques
+- Collecting different antiques
+- Spending coins
+- Buying specific antiques
 
-Complete a challenge and claim its coin reward.
+Complete challenges to earn additional coins.
 
-Click New Challenges to generate a new set of challenges.
+Click `New Challenges` to generate another set of challenges.
 
-## 7. Upgrade Your Shop
+### Upgrade Your Shop
 
 Your shop starts at Level 1.
 
 There are three shop levels.
 
-### Level 1
+#### Level 1
 
 - 4 antiques available
 - Normal customer rewards
 
-### Level 2
+#### Level 2
 
 - 6 antiques available
-- 2 new antiques unlocked
+- 2 additional antiques unlocked
 - Customer rewards increase by 20%
 
-### Level 3
+#### Level 3
 
 - All 8 antiques available
 - Final 2 antiques unlocked
 - Customer rewards increase by 40% total
 
-Upgrading normally costs 150 coins.
+The normal upgrade cost is 150 coins.
 
-## 8. Secret Cheat Code
+### Secret Cheat Code
 
-There is also a hidden cheat code.
-
-Find the cheat code input near the bottom of the page.
+The game contains a hidden cheat code.
 
 Enter:
 
 `iloveterrareviewersomuch`
 
-Then click Enter.
+into the cheat code box and click `Enter`.
 
-The shop upgrade price will change from 150 coins to 20 coins.
+The upgrade price will change to 20 coins.
 
-## 9. Audio
+## Audio
 
-The game includes browser-generated audio using the Web Audio API.
+The game uses the Web Audio API to generate audio directly in the browser.
 
-It includes:
+Features include:
 
 - Background music
 - Coin sounds
 - Cash sounds
 - Gameplay sound effects
 
-Click Start Music to begin the background music.
+The background music will start automatically 
 
-No external audio files are required.
+No external audio files are required for the game's generated audio.
 
-## 10. Animations
+## Animations
 
-The game includes several visual effects:
+The game includes:
 
 - Coin reward animations
 - Animated messages
-- Customer feedback
+- Customer reactions
 - Review animations
 - Gameplay feedback
 
-## Features
-
-- Fully web based
-- Runs directly in a web browser
-- No installation required
-- No game engine required
-- 8 collectible antiques
-- Buy and sell system
-- Collection system
-- Customer ordering system
-- Customer timer
-- Customer reviews
-- 1 to 5 star ratings
-- Random daily challenges
-- Shop progression
-- Three shop levels
-- Unlockable antiques
-- Reward bonuses
-- Secret cheat code
-- Background music
-- Sound effects
-- Animations
-- Responsive layout
-
 ## Technologies
 
-The project uses:
+The project is built with:
 
 - HTML
 - CSS
 - JavaScript
 - Web Audio API
 
-No frameworks are required.
+No frameworks or game engines are required.
 
 ## Project Structure
 
 ```text
-The Antique Corner/
+Antique-warehouse-simulator/
 │
 ├── index.html
 ├── style.css
@@ -199,28 +185,33 @@ The Antique Corner/
 
 `index.html` contains the game's structure.
 
-`style.css` controls the appearance and animations.
+`style.css` controls the visual design and animations.
 
-`script.js` contains the game logic.
+`main.js` contains the game's logic and mechanics.
 
 `img.png` is used for the antique images.
 
-## Running the Project
+## Requirements
 
-No special software is required.
+For the online version:
 
-1. Download or clone the project.
-2. Open the project folder.
-3. Open `index.html` in a modern web browser.
-4. Start playing.
+- A modern web browser
+- Internet connection
 
-Because the game is web based, it can also be hosted on services that support static websites.
+For the downloaded version:
 
-## Goal
+- A modern web browser
+- The project files
 
-Start with a small antique shop and work your way toward a fully upgraded Level 3 store.
+No additional software is required.
 
-Buy antiques, manage your collection, serve customers quickly, complete challenges, earn coins, and build your shop's reputation.
+## Links
+
+Play online:
+https://fah67425.github.io/Antique-warehouse-simulator/
+
+GitHub:
+https://github.com/fah67425/Antique-warehouse-simulator
 
 ## Credits
 
